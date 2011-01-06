@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="false" version="3">
+  <includeClasses>
+    <classEntry path="br.com.cauirs.core.DefaultNotificationContainer"/>
+    <classEntry path="br.com.cauirs.core.NotificationArea"/>
+    <classEntry path="br.com.cauirs.core.NotificationContainer"/>
+    <classEntry path="br.com.cauirs.notifications.ErrorNotification"/>
+    <classEntry path="br.com.cauirs.notifications.InfoNotification"/>
+    <classEntry path="br.com.cauirs.skins.ErrorSkin"/>
+    <classEntry path="br.com.cauirs.skins.InfoSkin"/>
+    <classEntry path="br.com.cauirs.skins.SuccessSkin"/>
+    <classEntry path="br.com.cauirs.skins.WarningSkin"/>
+  </includeClasses>
+  <includeResources>
+    <resourceEntry destPath="assets/success.png" sourcePath="assets/success.png"/>
+    <resourceEntry destPath="assets/warning.png" sourcePath="assets/warning.png"/>
+    <resourceEntry destPath="assets/Thumbs.db" sourcePath="assets/Thumbs.db"/>
+    <resourceEntry destPath="assets/error.png" sourcePath="assets/error.png"/>
+    <resourceEntry destPath="assets/info.png" sourcePath="assets/info.png"/>
+  </includeResources>
+  <namespaceManifests/>
+</flexLibProperties>

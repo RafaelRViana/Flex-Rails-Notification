@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<core:NotificationContainer xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx" 
+ xmlns:core="br.com.cauirs.core.*">
+
+	<fx:Script>
+		<![CDATA[
+			public static const SECOND:int = 1000;
+			
+			[Bindable]
+			public var messageColor:uint;
+			
+			[Bindable]
+			public var imageSource:Object;
+			
+			[Bindable]
+			public var showIcon:Boolean = true;
+			
+			[Bindable]
+			public var showHideMessage:Boolean = true;
+			
+		]]>
+	</fx:Script>
+	
+	<s:HGroup paddingBottom="10" paddingLeft="10" paddingRight="10" paddingTop="10"
+			verticalAlign="middle" width="100%">
+		<mx:Image width="16" height="16"  
+				 source="{imageSource}" 
+				 visible="{showIcon}"/>
+		<s:Label text="{message}" color="{messageColor}" fontWeight="bold" 
+				 width="100%" height="16" 
+				 verticalAlign="middle"/>
+		<s:Label text="[{hideMessage}]" click="hide()" height="16"
+				 verticalAlign="middle"
+				 buttonMode="true"
+				 visible="{showHideMessage}"/>
+	</s:HGroup>
+	
+</core:NotificationContainer>
